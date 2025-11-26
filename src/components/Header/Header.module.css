@@ -170,5 +170,8 @@
   .language{
     display: none;
   }
-  
+  .cart span{
+    background-color: transparent;
+    top: -3px;
+  }
 }

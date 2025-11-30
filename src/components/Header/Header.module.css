@@ -135,8 +135,8 @@
   color: orange;
 }
 .order_container a:hover,
-.delivery:hover,
-.logo_container a:hover,
+.delivery_eth:hover,
+.logo_img:hover,
 .lower_container ul li:hover{
     border: 1px solid white;
     border-radius: 3px;

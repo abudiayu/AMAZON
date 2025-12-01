@@ -13,3 +13,6 @@
         rgba(225,225,225)
     );
 }
+:global(.carousel-status) {
+    display: none !important;
+}

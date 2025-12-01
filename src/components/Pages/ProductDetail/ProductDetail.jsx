@@ -25,7 +25,9 @@ function ProductDetail() {
   return (
     <LayOut>
       {isLoading?(<Loader/>):(<ProductCard  
-        product = {product}           // if productu kale render areg kelele loaderinge render areg
+        product = {product}  // if productu kale render areg kelele loaderinge render areg
+        flex={true}  
+        renderDesc ={true}       
       /> )}
     </LayOut>
 

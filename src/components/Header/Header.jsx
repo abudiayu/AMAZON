@@ -14,7 +14,7 @@ const Header=()=> {
 
 
   return (
-    <>
+    <section className={classes.fixed}>
       <section>
         <div className={classes.header_container} >
 
@@ -84,7 +84,7 @@ const Header=()=> {
         </div>
       </section>
       <LowerHeader />
-    </>  
+    </section>  
   )
 }
 

@@ -1,0 +1,27 @@
+[debug] [2025-12-11T19:15:35.961Z] ----------------------------------------------------------------------
+[debug] [2025-12-11T19:15:35.964Z] Command:       C:\Program Files\APP\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2025-12-11T19:15:35.965Z] CLI Version:   15.0.0
+[debug] [2025-12-11T19:15:35.971Z] Platform:      win32
+[debug] [2025-12-11T19:15:35.971Z] Node Version:  v22.21.0
+[debug] [2025-12-11T19:15:35.975Z] Time:          Thu Dec 11 2025 22:15:35 GMT+0300 (East Africa Time)
+[debug] [2025-12-11T19:15:35.975Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-12-11T19:17:44.148Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-11T19:17:44.148Z] > authorizing via signed-in user (abudy6038@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2025-12-11T19:17:44.160Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-11T19:17:44.160Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-12-11T19:17:44.165Z] Emulator locator file path: C:\Users\hp\AppData\Local\Temp\hub-fir-196c7.json
+[debug] [2025-12-11T19:17:44.215Z] [hub] writing locator at C:\Users\hp\AppData\Local\Temp\hub-fir-196c7.json
+[debug] [2025-12-11T19:17:44.674Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-11T19:17:44.675Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-11T19:17:44.675Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-12-11T19:17:44.676Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-12-11T19:17:44.854Z] defaultcredentials: writing to file C:\Users\hp\AppData\Roaming\firebase\abudy6038_gmail_com_application_default_credentials.json
+[debug] [2025-12-11T19:17:44.859Z] Setting GAC to C:\Users\hp\AppData\Roaming\firebase\abudy6038_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\hp\\AppData\\Roaming\\firebase\\abudy6038_gmail_com_application_default_credentials.json"}}
+[debug] [2025-12-11T19:17:44.860Z] Checked if tokens are valid: false, expires at: 1765467410179
+[debug] [2025-12-11T19:17:44.860Z] Checked if tokens are valid: false, expires at: 1765467410179
+[debug] [2025-12-11T19:17:44.861Z] > refreshing access token with scopes: []
+[debug] [2025-12-11T19:17:44.864Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-12-11T19:17:44.864Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]

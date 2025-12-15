@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import classes from "./signUp.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { auth } from "../../../Utility/firebase";
 import {
   signInWithEmailAndPassword,
@@ -19,7 +19,11 @@ function Auth() {
     signIn: false,
     signUp: false,
   });
+  
   const navigate = useNavigate();
+  const navStateData = useLocation();
+
+
 
   // Auth handler function for signIn and signUp
   const authHandler = (e) => {
@@ -37,7 +41,7 @@ function Auth() {
             user: userInfo.user,
           });
           setLoading({ ...loading, signIn: false });
-          navigate("/");
+          navigate(navStateData?.state?.redirect || "/");
         })
         .catch((err) => {
           setError(err.message);
@@ -54,7 +58,7 @@ function Auth() {
             user: userInfo.user,
           });
           setLoading({ ...loading, signUp: false });
-          navigate("/");
+          navigate(navStateData?.state?.redirect || "/");
         })
         .catch((err) => {
           setError(err.message);
@@ -76,9 +80,23 @@ function Auth() {
           <small style={{ paddingTop: "5px", color: "red" }}>{error}</small>
         )}
         <form onSubmit={authHandler}>
-          {" "}
+          
           {/* Use onSubmit instead of onClick to trigger form submit */}
           <h1>Sign In</h1>
+          {
+            navStateData?.state?.msg && (
+              <small 
+                style={{
+                  padding:"5px",
+                  textAlign:"center",
+                  color:"red",
+                  fontWeight:"bold",
+                }}
+              >
+                {navStateData.state.msg}
+              </small>
+            )
+          }
           <div>
             <label htmlFor="email">Email</label>
             <input

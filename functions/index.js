@@ -5,6 +5,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 
 dotenv.config();
+
 setGlobalOptions({ maxInstances: 10 });
 
 const stripe = require("stripe")(process.env.STRIPE_KEY);
@@ -19,11 +20,11 @@ app.get("/", (req, res) => {
   });
 });
 app.post("/payment/create",async (req,res) => {
-    const total = req.query.total;
+    const total = parseInt(req.query.total);
     if(total > 0){
         const paymentIntent = await stripe.paymentIntents.create({
             amount:total,
-            currency:"USD",
+            currency:"usd",
         });
         console.log(paymentIntent)
         res.status(201).json({

@@ -1,11 +1,8 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-// Import Authentication functions from Firebase v9 SDK
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
-import { getFirestore } from "firebase/firestore"; // Optional: if you need Firestore
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBvHkQwHsUYEfnpDt2uYR3G5g2BubyJrIY",
   authDomain: "fir-196c7.firebaseapp.com",
@@ -16,18 +13,10 @@ const firebaseConfig = {
   measurementId: "G-97PF3CQVCW"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Firebase Authentication
-const auth = getAuth(app);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+export const analytics = getAnalytics(app);
 
-// Initialize Firestore (optional)
-const db = getFirestore(app);
-
-// Analytics (optional)
-const analytics = getAnalytics(app);
-
-// Export Firebase services
-export { auth, db, analytics };
 export default app;

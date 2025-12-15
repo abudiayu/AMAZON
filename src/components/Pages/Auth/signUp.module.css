@@ -16,6 +16,7 @@
     border-radius: 5px;
     border: 1px solid lightgray;
     padding: 20px;
+    box-shadow: 0 2px 6px rgba(15, 17, 17, 0.15);
 }
 .login_container h1{
     font-size: 25px;
@@ -74,4 +75,53 @@
 }
 .login_registerButton:hover{
     background-color: lightgray;
+}
+@media (max-width: 720px) {
+  .login {
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .login img {
+    margin: 12px auto;
+    width: 72px;
+  }
+
+  .login_container {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 8px;
+    padding: 14px 12px;
+    border-radius: 4px;
+    border-color: #d5d9d9;
+    box-shadow: 0 2px 6px rgba(15, 17, 17, 0.15);
+  }
+
+  .login_container h1 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+
+  .login_container form {
+    gap: 8px;
+  }
+
+  .login_container form input {
+    padding: 8px 10px;
+    font-size: 13px;
+    border-radius: 3px;
+  }
+
+  .login_signInButton,
+  .login_registerButton {
+    height: 32px;
+    font-size: 12.5px;
+    border-radius: 4px;
+  }
+
+  .login_container p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
 }

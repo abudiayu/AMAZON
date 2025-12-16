@@ -31,7 +31,7 @@ function Routing() {
               </ProtectedRouting>
               }/>
             <Route path='/order' element={
-              <ProtectedRouting msg={"You must log in to see your orders!"} redirect={"/order"}>
+              <ProtectedRouting msg={"You must log in to access your orders!"} redirect={"/order"}>
                 <Order/>
               </ProtectedRouting>
               }/>

@@ -147,10 +147,12 @@
 .lower_container ul li:hover{
     border: 1px solid white;
     border-radius: 3px;
+    box-sizing: border-box;
 }
 .lower_container{
   background-color: #232f3e;
   color: white;
+  box-shadow: 0 3px 6px rgba(200, 200, 200, 0.4);
 }
 .lower_container ul{
   display: flex;
@@ -162,14 +164,27 @@
 }
 .lower_container ul li:first-child{
   display: flex;
-  gap: 2px;
+  gap: 5px;
   align-items: center;
 }
+.hide_icon{
+  display: none;
+  margin-left: auto;
+  font-size: 18px;
+}
+.lower_container ul a{
+  color: white;
+  text-decoration: none;
+}
 @media screen and (max-width:720px){
+  .lower_container .view{
+    width: 50px;
+  }
   .header_container{
     display: flex;
     flex-direction: column !important;
     height: auto;
+    
   }
   .lower_container ul li:not(:first-child){
     display: none;
@@ -182,5 +197,28 @@
     border-radius: 10px;
     top: -1.2px;
     left: 19px;
+  }
+    .hide {
+    display: none;
+    cursor: pointer;
+  }
+  .lower_container ul.show {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .lower_container ul.show li:not(:first-child){
+    display: flex;
+    margin-left: 20px;
+    width: 150px;
+  }
+  .lower_container ul.show li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+
+  .lower_container ul.show li a .hide_icon {
+    display: inline-flex; 
   }
 }

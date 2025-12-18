@@ -153,11 +153,12 @@
   background-color: #232f3e;
   color: white;
   box-shadow: 0 3px 6px rgba(200, 200, 200, 0.4);
+  height: 40px;
 }
 .lower_container ul{
   display: flex;
   list-style: none;
-  gap: 5px;
+  gap: 8px;
 }
 .lower_container ul li{
   padding: 8px;
@@ -167,7 +168,7 @@
   gap: 5px;
   align-items: center;
 }
-.hide_icon{
+.lower_container ul li .hide_icon{
   display: none;
   margin-left: auto;
   font-size: 18px;

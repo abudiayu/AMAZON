@@ -1,0 +1,218 @@
+.footer {
+  background: #232f3e;
+  color: white;
+  font-size: 14px;
+}
+
+/* Back to top */
+.backToTop {
+  background: #37475a; /* darker, sleek background */
+  text-align: center;
+  padding: 15px 0;
+  transition: background 0.3s ease;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.backToTop:hover {
+  background: #232f3e; /* subtle hover effect */
+}
+
+.backToTop a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.backToTop a:hover {
+  color: #ff9900; /* Amazon-like accent color */
+  transform: translateY(-2px);
+}
+
+.backToTop a svg {
+  font-size: 24px; /* icon size */
+  transition: transform 0.2s ease;
+}
+
+.backToTop a:hover svg {
+  transform: translateY(-2px);
+}
+
+/* Top links */
+.footerLinks {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.footerLinks h4 {
+  margin-bottom: 10px;
+}
+
+.footerLinks a {
+  display: block;
+  color: #ddd;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: #3a4553;
+}
+
+/* Locale bar */
+.localeBar {
+  background: #232f3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.localeButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.localeBtn {
+  border: 1px solid #848688;
+  padding: 6px 10px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.localeBtn:hover {
+  border-color: white;
+}
+
+/* Services grid */
+.servicesGrid {
+  background: #131a22;
+  padding: 40px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.serviceItem {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.serviceTitle {
+  color: white;
+  display: block;
+}
+
+.serviceItem:hover .serviceTitle {
+  text-decoration: underline;
+}
+
+/* Legal */
+.legal {
+  background: #131a22;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.legalLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.legalLinks a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.legalLinks a:hover {
+  text-decoration: underline;
+}
+.backToTop {
+  background: #232f3e;
+  text-align: center;
+  padding: 15px 0;
+  transition: background 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  margin-top: 10px;
+
+}
+
+.backToTop:hover {
+  background: #37475a;
+}
+
+.backToTop a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.backToTop a:hover {
+  color: #ff9900;
+  transform: translateY(-2px);
+}
+
+.backToTop a svg {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+  padding: 10px;
+}
+
+.backToTop a:hover svg {
+  transform: translateY(-2px);
+}
+
+/* Contact Info Styling */
+.contactInfo {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contactInfo a {
+  color: #ffffffcc; /* slightly lighter for subtle difference */
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contactInfo a:hover {
+  color: #ff9900;
+  transform: translateY(-2px);
+}

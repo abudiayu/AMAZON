@@ -1,16 +1,16 @@
 
 import React from 'react';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Landing from './components/Pages/Landing/Landing';
-import Auth from './components/Pages/Auth/Auth';
-import Payment from './components/Pages/Payment/Payment';
-import Order from './components/Pages/Order/Order';
-import Cart from './components/Pages/Cart/Cart';
-import Results from "./components/Pages/Results/Result";
-import ProductDetail from "./components/Pages/ProductDetail/ProductDetail";
+import Landing from './components/pages/Landing/Landing';
+import Auth from './components/pages/Auth/Auth';
+import Payment from './components/pages/payment/Payment';
+import Order from './components/pages/Order/Order';
+import Cart from './components/pages/Cart/Cart';
+import Results from "./components/pages/Results/Result";
+import ProductDetail from "./components/pages/ProductDetail/ProductDetail";
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
-import ProtectedRouting from './components/Pages/ProtectedRouting/ProtectedRouting';
+import ProtectedRouting from './components/pages/ProtectedRouting/ProtectedRouting';
 const stripePromise = loadStripe(
   "pk_test_51Sd8oV73eHHIhNhmzMQiLcXh7rKw7SACSCJ1X5guHh8bPcHH4u6QMnCOoVRjTqpIwZYWxVDStWAmwCToboe0Q3O200dwi35pvw"
 );
